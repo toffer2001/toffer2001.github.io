@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -26,36 +27,56 @@
 
 <div id="page-wrap">
 
-	<div class="white" id="about">
+	<div class="white" id="contact">
 		<h2>Contact</h2>
 		<hr>
 	
-		<div id="contact">
+		<div>
+		
+<!-- 			Test alternative form method
 			<form action="/action_page.php">
 			<p>Name <br> <input type="text" name="fullname" size="84"><br></p>
 			<p>Email <br> <input type="text" name="email" size="84"><br></p>
 			<p>Message <br> <textarea rows="8" cols="80" name="message"></textarea></p>
 			<input type="submit" value="Submit">
+			</form> -->
+			
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">
 			</form>
 
 		</div>
 
 	</div>
 
-	<div class="white" id="connect">
+	<div id="connect">
 		<h2>Connect with Me</h2>
 		<hr>
-		<a href="https://www.facebook.com/kristoffer.keene" target=blank><img src="assets/images/facebook2.png" alt="Facebook" style="width: 50px; height: 50px"></a>
-		<a href="https://www.linkedin.com/in/kriskeene/" target=blank><img src="assets/images/linkedin2.png" alt="LinkedIn" style="width: 50px; height: 50px"></a>
-		<a href="https://plus.google.com/107556425937718896753" target=blank><img src="assets/images/google_plus3.png" alt="Google+" style="width: 50px; height: 50px"></a>
+		<a class="social" href="https://www.facebook.com/kristoffer.keene" target=blank><img src="assets/images/facebook2.png" alt="Facebook"</a>
+		<a class="social" href="https://www.linkedin.com/in/kriskeene/" target=blank><img src="assets/images/linkedin2.png" alt="LinkedIn"></a>
+		<a class="social" href="https://plus.google.com/107556425937718896753" target=blank><img src="assets/images/google_plus3.png" alt="Google+"></a>
 	</div>
 
 </div>
 
 
-<div id="footer">
+<footer>
 	&copy; Copyright 2017
-</div>
+</footer>
 
 </body>
 </html>
